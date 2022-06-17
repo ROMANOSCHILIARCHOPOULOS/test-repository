@@ -1,0 +1,1 @@
+this is a text in order to learn about git in general and how a reposit. works
