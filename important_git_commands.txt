@@ -1,0 +1,44 @@
+IMPORTANT GIT COMMANDS 
+
+REPOSITORIES
+
+	
+	mkdir workspace ------> create workspace folder
+	cd git_workspace/
+	ls      -------> used in order to see files in directory (repository) 
+	cd <repository name> (eg Carbon-calculator) ------> cd (change directory) be able to operate within the directory of the local repository files. 	
+	
+	git touch <filename.>     
+	git add   <filename.>     -------> used to add a file in local repository. 
+	
+	git pull    -------> pull files from remote repository (github)
+	
+	git commit -m ' fix:<filename>'  ---------> commit files to remote repo.
+	git push origin main   --------> sync / add files from local to remote repository. 
+	
+	git rm ----> remove a file, has to be paired with git commit --amend
+
+
+BRANCHES
+	git branch -----> see all branches of your repository
+	
+	git ls-tree -r <branch name> ----> see listed files in the branch 
+	
+	git checkout -b <branch name> -----> create a branch 
+	
+	git pull origin <branch name> ------> pull files from remote branch
+
+in order to add a file to a branch you need to be checked out on that branch so you need to follow:
+	
+	git checkout -b <branchname> 
+	touch <filename>
+	git add <filename>
+	git commit -m 
+	git push origin <brnach name>
+	
+merge branch to main branch
+	
+	git commit -m <filenames>   ------> you have to have commited the files
+	git checkout main ----> go to the main branch
+	git merge <branch name>
+	
